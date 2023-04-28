@@ -6,9 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "markuplint": "markuplint \"./src/**/*.{jsx,tsx}\""
   },
   "dependencies": {
+    "@markuplint/jsx-parser": "^3.6.1",
+    "@markuplint/react-spec": "^3.7.0",
     "@types/node": "18.16.2",
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.1",
@@ -18,5 +21,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "markuplint": "^3.8.0"
   }
 }
